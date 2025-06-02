@@ -4,34 +4,36 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Send, Star, Heart, Users, Award } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-export default function ContactSection() {
+export default function NominateSection() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    company: "",
-    service: "",
-    message: ""
+    nomineeName: "",
+    nomineeContact: "",
+    category: "",
+    yourName: "",
+    yourEmail: "",
+    heroStory: "",
+    impact: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your message! We will get back to you soon.",
+      title: "Nomination Submitted!",
+      description: "Thank you for nominating a hero! We will review the nomination and get in touch soon.",
     });
     setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      company: "",
-      service: "",
-      message: ""
+      nomineeName: "",
+      nomineeContact: "",
+      category: "",
+      yourName: "",
+      yourEmail: "",
+      heroStory: "",
+      impact: ""
     });
   };
 
@@ -39,164 +41,160 @@ export default function ContactSection() {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
+  const categories = [
+    { value: "healthcare", label: "Healthcare Hero", icon: Heart },
+    { value: "education", label: "Education Champion", icon: Star },
+    { value: "community", label: "Community Leader", icon: Users },
+    { value: "safety", label: "Safety Guardian", icon: Award },
+    { value: "innovation", label: "Innovation Pioneer", icon: Star },
+    { value: "everyday", label: "Everyday Angel", icon: Heart }
+  ];
+
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="nominate" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Get Started Today</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your business? Contact us for a free consultation and discover how we can help you achieve your goals.
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-gold mb-6">
+            <Star className="w-8 h-8 text-gold fill-current" />
+          </div>
+          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Nominate a Hero</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Know someone who deserves recognition? Share their inspiring story and help us celebrate 
+            the heroes who make Hyderabad extraordinary.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div>
-            <div className="space-y-8">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Office</h3>
-                  <p className="text-gray-600">
-                    123 Innovation Drive<br />
-                    Tech Hub District<br />
-                    San Francisco, CA 94105
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
-                  <Mail className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
-                  <p className="text-gray-600">hello@techcorp.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
-                  <Clock className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
-                  <p className="text-gray-600">
-                    Monday - Friday: 9:00 AM - 6:00 PM<br />
-                    Saturday: 10:00 AM - 4:00 PM
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <Card className="bg-gray-50 border-0">
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-gray-900 border border-gray-800">
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="space-y-6">
+                    <h3 className="text-xl font-semibold text-white mb-4 font-serif">About the Hero</h3>
+                    
+                    <div>
+                      <Label htmlFor="nomineeName" className="text-sm font-medium text-gray-300 mb-2">
+                        Hero's Full Name *
+                      </Label>
+                      <Input
+                        id="nomineeName"
+                        value={formData.nomineeName}
+                        onChange={(e) => handleInputChange("nomineeName", e.target.value)}
+                        placeholder="Enter the hero's name"
+                        className="mt-2 bg-black border-gray-700 text-white"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <Label htmlFor="nomineeContact" className="text-sm font-medium text-gray-300 mb-2">
+                        Hero's Contact (Optional)
+                      </Label>
+                      <Input
+                        id="nomineeContact"
+                        value={formData.nomineeContact}
+                        onChange={(e) => handleInputChange("nomineeContact", e.target.value)}
+                        placeholder="Phone or email"
+                        className="mt-2 bg-black border-gray-700 text-white"
+                      />
+                    </div>
+                    
+                    <div>
+                      <Label className="text-sm font-medium text-gray-300 mb-2">
+                        Hero Category *
+                      </Label>
+                      <Select onValueChange={(value) => handleInputChange("category", value)}>
+                        <SelectTrigger className="mt-2 bg-black border-gray-700 text-white">
+                          <SelectValue placeholder="Select a category" />
+                        </SelectTrigger>
+                        <SelectContent className="bg-gray-900 border-gray-700">
+                          {categories.map((category) => (
+                            <SelectItem key={category.value} value={category.value} className="text-white hover:bg-gray-800">
+                              {category.label}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <h3 className="text-xl font-semibold text-white mb-4 font-serif">Your Information</h3>
+                    
+                    <div>
+                      <Label htmlFor="yourName" className="text-sm font-medium text-gray-300 mb-2">
+                        Your Name *
+                      </Label>
+                      <Input
+                        id="yourName"
+                        value={formData.yourName}
+                        onChange={(e) => handleInputChange("yourName", e.target.value)}
+                        placeholder="Your full name"
+                        className="mt-2 bg-black border-gray-700 text-white"
+                        required
+                      />
+                    </div>
+                    
+                    <div>
+                      <Label htmlFor="yourEmail" className="text-sm font-medium text-gray-300 mb-2">
+                        Your Email *
+                      </Label>
+                      <Input
+                        type="email"
+                        id="yourEmail"
+                        value={formData.yourEmail}
+                        onChange={(e) => handleInputChange("yourEmail", e.target.value)}
+                        placeholder="your.email@example.com"
+                        className="mt-2 bg-black border-gray-700 text-white"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
                   <div>
-                    <Label htmlFor="firstName" className="text-sm font-medium text-gray-700 mb-2">
-                      First Name
+                    <Label htmlFor="heroStory" className="text-sm font-medium text-gray-300 mb-2">
+                      Hero's Story *
                     </Label>
-                    <Input
-                      id="firstName"
-                      value={formData.firstName}
-                      onChange={(e) => handleInputChange("firstName", e.target.value)}
-                      placeholder="John"
-                      className="mt-2"
+                    <Textarea
+                      id="heroStory"
+                      value={formData.heroStory}
+                      onChange={(e) => handleInputChange("heroStory", e.target.value)}
+                      rows={6}
+                      placeholder="Tell us about this person's heroic acts, their character, and what makes them special. Include specific examples of how they've helped others or made a positive impact."
+                      className="mt-2 bg-black border-gray-700 text-white"
+                      required
                     />
                   </div>
+                  
                   <div>
-                    <Label htmlFor="lastName" className="text-sm font-medium text-gray-700 mb-2">
-                      Last Name
+                    <Label htmlFor="impact" className="text-sm font-medium text-gray-300 mb-2">
+                      Community Impact
                     </Label>
-                    <Input
-                      id="lastName"
-                      value={formData.lastName}
-                      onChange={(e) => handleInputChange("lastName", e.target.value)}
-                      placeholder="Doe"
-                      className="mt-2"
+                    <Textarea
+                      id="impact"
+                      value={formData.impact}
+                      onChange={(e) => handleInputChange("impact", e.target.value)}
+                      rows={4}
+                      placeholder="How has this person's actions impacted the community? Include any measurable outcomes or lasting changes they've created."
+                      className="mt-2 bg-black border-gray-700 text-white"
                     />
                   </div>
                 </div>
                 
-                <div>
-                  <Label htmlFor="email" className="text-sm font-medium text-gray-700 mb-2">
-                    Email
-                  </Label>
-                  <Input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="john.doe@company.com"
-                    className="mt-2"
-                  />
+                <div className="text-center pt-6">
+                  <Button 
+                    type="submit" 
+                    className="bg-gold text-black px-12 py-4 h-auto text-lg font-semibold hover:bg-yellow-500 transition-all"
+                  >
+                    <Send className="w-5 h-5 mr-2" />
+                    Submit Nomination
+                  </Button>
+                  <p className="text-gray-400 text-sm mt-4">
+                    All nominations are reviewed by our team. We may contact you for additional information.
+                  </p>
                 </div>
-                
-                <div>
-                  <Label htmlFor="company" className="text-sm font-medium text-gray-700 mb-2">
-                    Company
-                  </Label>
-                  <Input
-                    id="company"
-                    value={formData.company}
-                    onChange={(e) => handleInputChange("company", e.target.value)}
-                    placeholder="Company Name"
-                    className="mt-2"
-                  />
-                </div>
-                
-                <div>
-                  <Label className="text-sm font-medium text-gray-700 mb-2">
-                    Service Interest
-                  </Label>
-                  <Select onValueChange={(value) => handleInputChange("service", value)}>
-                    <SelectTrigger className="mt-2">
-                      <SelectValue placeholder="Select a service" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="digital-transformation">Digital Transformation</SelectItem>
-                      <SelectItem value="cloud-solutions">Cloud Solutions</SelectItem>
-                      <SelectItem value="data-analytics">Data Analytics</SelectItem>
-                      <SelectItem value="cybersecurity">Cybersecurity</SelectItem>
-                      <SelectItem value="ai-ml">AI & Machine Learning</SelectItem>
-                      <SelectItem value="consulting">Strategic Consulting</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div>
-                  <Label htmlFor="message" className="text-sm font-medium text-gray-700 mb-2">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => handleInputChange("message", e.target.value)}
-                    rows={4}
-                    placeholder="Tell us about your project or questions..."
-                    className="mt-2"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary text-white px-8 py-4 h-auto font-semibold hover:bg-primary/90"
-                >
-                  Send Message
-                </Button>
               </form>
             </CardContent>
           </Card>

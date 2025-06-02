@@ -1,73 +1,82 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Monitor, 
-  Cloud, 
-  TrendingUp, 
+  Heart, 
   Shield, 
-  Bot, 
-  Users 
+  Users, 
+  Lightbulb, 
+  Award, 
+  HandHeart 
 } from "lucide-react";
 
-const services = [
+const heroCategories = [
   {
-    icon: Monitor,
-    title: "Digital Transformation",
-    description: "Modernize your business processes with cutting-edge digital solutions that streamline operations and enhance customer experiences.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description: "Secure, scalable cloud infrastructure that grows with your business while reducing operational costs and complexity.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Data Analytics",
-    description: "Transform raw data into actionable insights that drive strategic decision-making and competitive advantage.",
+    icon: Heart,
+    title: "Healthcare Heroes",
+    description: "Medical professionals, volunteers, and caregivers who dedicate their lives to healing and helping others in our community.",
+    count: "150+ Heroes"
   },
   {
     icon: Shield,
-    title: "Cybersecurity",
-    description: "Comprehensive security solutions that protect your digital assets and ensure business continuity in an evolving threat landscape.",
-  },
-  {
-    icon: Bot,
-    title: "AI & Machine Learning",
-    description: "Harness the power of artificial intelligence to automate processes, predict trends, and unlock new opportunities.",
+    title: "Safety Guardians",
+    description: "Police officers, firefighters, and security personnel who risk their lives to keep our neighborhoods safe.",
+    count: "120+ Heroes"
   },
   {
     icon: Users,
-    title: "Strategic Consulting",
-    description: "Expert guidance and strategic planning to help you navigate complex business challenges and achieve your goals.",
+    title: "Community Leaders",
+    description: "Social workers, activists, and organizers who bring positive change to their communities through service.",
+    count: "80+ Heroes"
+  },
+  {
+    icon: Lightbulb,
+    title: "Education Champions",
+    description: "Teachers, mentors, and educators who inspire and empower the next generation of Hyderabadis.",
+    count: "100+ Heroes"
+  },
+  {
+    icon: Award,
+    title: "Innovation Pioneers",
+    description: "Entrepreneurs and innovators who create solutions that benefit society and drive progress.",
+    count: "50+ Heroes"
+  },
+  {
+    icon: HandHeart,
+    title: "Everyday Angels",
+    description: "Ordinary citizens who perform extraordinary acts of kindness and make a difference in daily life.",
+    count: "200+ Heroes"
   },
 ];
 
-export default function ServicesSection() {
+export default function HeroesSection() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="heroes" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Services</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive solutions designed to accelerate your business transformation and drive sustainable growth.
+          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Categories of Heroes</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Discover the diverse ways people contribute to making Hyderabad a better place for everyone.
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
+          {heroCategories.map((category, index) => {
+            const IconComponent = category.icon;
             return (
-              <Card key={index} className="bg-white shadow-lg card-hover border-0">
+              <Card key={index} className="bg-black border border-gray-800 hover:border-gold transition-all duration-300 group">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-gold/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
+                    <IconComponent className="w-8 h-8 text-gold" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    {service.description}
+                  <h3 className="text-2xl font-semibold text-white mb-4 font-serif">{category.title}</h3>
+                  <p className="text-gray-300 leading-relaxed mb-6">
+                    {category.description}
                   </p>
-                  <button className="text-primary font-semibold hover:text-primary/80 transition-colors">
-                    Learn More →
-                  </button>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gold font-semibold text-sm">{category.count}</span>
+                    <button className="text-gold font-semibold hover:text-yellow-400 transition-colors">
+                      Explore →
+                    </button>
+                  </div>
                 </CardContent>
               </Card>
             );
