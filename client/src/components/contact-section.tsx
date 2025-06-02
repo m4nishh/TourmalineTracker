@@ -8,7 +8,7 @@ import { Send, Star, Heart, Users, Award } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-export default function NominateSection() {
+export default function SponsorsSection() {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     nomineeName: "",

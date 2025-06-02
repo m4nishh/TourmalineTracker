@@ -47,14 +47,14 @@ const heroCategories = [
   },
 ];
 
-export default function HeroesSection() {
+export default function JurySection() {
   return (
-    <section id="heroes" className="py-20 bg-gray-900">
+    <section id="jury" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Categories of Heroes</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Jury Members</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover the diverse ways people contribute to making Hyderabad a better place for everyone.
+            Meet the distinguished panel of judges who carefully evaluate and select our heroes.
           </p>
         </div>
         

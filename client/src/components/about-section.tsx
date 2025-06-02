@@ -25,23 +25,22 @@ const values = [
   }
 ];
 
-export default function AboutSection() {
+export default function AwardsSection() {
   return (
-    <section id="about" className="py-20 bg-gray-900">
+    <section id="awards" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-white mb-6 font-serif">About Heroes of Hyderabad</h2>
+            <h2 className="text-4xl font-bold text-white mb-6 font-serif">Awards & Recognition</h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              Heroes of Hyderabad is a platform dedicated to celebrating the unsung heroes who make our city 
-              extraordinary. We believe that heroism exists in all forms - from the healthcare worker saving lives 
-              to the teacher inspiring young minds, from the volunteer feeding the hungry to the innovator 
-              solving community problems.
+              The Heroes of Hyderabad Awards celebrate outstanding individuals who have made significant 
+              contributions to our community. These prestigious awards recognize courage, compassion, 
+              innovation, and dedication in various fields of service.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              Our mission is to shine a light on these remarkable individuals, share their inspiring stories, 
-              and create a community that values service, compassion, and positive impact. Every hero featured 
-              on our platform represents the spirit of Hyderabad - resilient, caring, and always ready to help.
+              Our award categories honor heroes from all walks of life - healthcare professionals, educators, 
+              community leaders, safety guardians, innovators, and everyday angels who make extraordinary 
+              differences in ordinary moments.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mb-8">

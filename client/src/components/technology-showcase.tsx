@@ -26,14 +26,14 @@ const featuredHeroes = [
   }
 ];
 
-export default function FeaturedHeroesSection() {
+export default function DignitariesSection() {
   return (
-    <section className="py-20 bg-black">
+    <section id="dignitaries" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Featured Heroes</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Distinguished Dignitaries</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Meet some of the extraordinary individuals whose dedication and compassion inspire us all.
+            Honoring the esteemed leaders and personalities who support our mission of recognizing heroes.
           </p>
         </div>
         
