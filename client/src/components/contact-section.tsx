@@ -51,16 +51,16 @@ export default function SponsorsSection() {
   ];
 
   return (
-    <section id="nominate" className="py-20 bg-black">
+    <section id="sponsors" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-gold mb-6">
             <Star className="w-8 h-8 text-gold fill-current" />
           </div>
-          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Nominate a Hero</h2>
+          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Our Sponsors</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Know someone who deserves recognition? Share their inspiring story and help us celebrate 
-            the heroes who make Hyderabad extraordinary.
+            We gratefully acknowledge the generous support of our sponsors who make the Heroes of Hyderabad 
+            awards possible and help us celebrate our community's finest.
           </p>
         </div>
         
