@@ -19,8 +19,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
-            Celebrating the unsung heroes who make Hyderabad extraordinary. 
-            Discover inspiring stories of courage, compassion, and community service.
+          Celebrating the unsung heroes who make Hyderabad a better place
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

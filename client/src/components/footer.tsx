@@ -21,9 +21,7 @@ export default function Footer() {
               <div className="text-2xl font-bold gold-text font-serif">Heroes of Hyderabad</div>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              Celebrating the unsung heroes who make Hyderabad extraordinary. 
-              Join us in recognizing the compassion, courage, and community spirit 
-              that defines our beautiful city.
+            Celebrating the unsung heroes who make Hyderabad a better place
             </p>
             <div className="flex space-x-4">
               <Button

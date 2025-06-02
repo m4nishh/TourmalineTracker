@@ -49,11 +49,32 @@ export default function Navigation() {
         </div>
         
         {/* Center Logo */}
-        <div className="flex cursor-pointer justify-center" onClick={() => scrollToSection('home')}>
-          <div className="text-2xl font-bold text-white font-serif tracking-wider">
-            Heroes of Hyderabad
-          </div>
-        </div>
+        <div className="flex cursor-pointer justify-center">
+      <img
+        alt="Heroes of Hyderabad logo"
+        loading="lazy"
+        width={180}
+        height={50}
+        decoding="async"
+        className="object-contain"
+        //srcSet="/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=256&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=384&q=75 2x"
+        src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=384&q=75"
+        style={{ color: "transparent" }}
+      />
+    </div>
+
+       
+    <div className="fixed top-0 right-6 z-50 hidden lg:flex flex-col items-center" style={{ opacity: 1, transform: "none" }}>
+      <div className="flex flex-col items-center origin-top" style={{ transform: "none" }}>
+        <div className="h-[45vh] w-[2px] bg-white/60 animate-pulse"></div>
+        <button
+          aria-label="Open nomination form"
+          className="rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 px-6 py-3 font-bold text-black text-sm shadow-2xl hover:scale-105 transition-transform glow-effect origin-top cursor-pointer"
+        >
+          Nominate Now
+        </button>
+      </div>
+    </div>
         
         {/* Last two nav items */}
         <div className="flex justify-center">
@@ -114,6 +135,8 @@ export default function Navigation() {
           </div>
         </div>
       )}
+
+      
     </nav>
   );
 }
