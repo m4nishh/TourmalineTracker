@@ -8,7 +8,40 @@ import { Send, Star, Heart, Users, Award } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
-export default function SponsorsSection() {
+
+interface Sponsor {
+  name: string;
+  logo: string;
+  alt: string;
+}
+
+interface SponsorsProps {
+  sponsors?: Sponsor[];
+  onGetInTouchClick?: () => void;
+}
+
+const defaultSponsors: Sponsor[] = [
+  {
+    name: "House Of Make-Up",
+    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHOM.png&w=1920&q=75",
+    alt: "Logo of House Of Make-Up"
+  },
+  {
+    name: "Qentelli",
+    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FQentelli.png&w=1920&q=75",
+    alt: "Logo of Qentelli"
+  },
+  {
+    name: "Good Universe",
+    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FGood_Universe.png&w=1920&q=75",
+    alt: "Logo of Good Universe"
+  }
+];
+
+export default function SponsorsSection({ 
+  sponsors = defaultSponsors,
+  onGetInTouchClick 
+}: SponsorsProps) {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     nomineeName: "",
@@ -50,22 +83,65 @@ export default function SponsorsSection() {
     { value: "everyday", label: "Everyday Angel", icon: Heart }
   ];
 
+  const handleGetInTouchClick = () => {
+    if (onGetInTouchClick) {
+      onGetInTouchClick();
+    } else {
+      // Default behavior - you can modify this as needed
+      console.log('Get in touch clicked');
+    }
+  };
+
   return (
-    <section id="sponsors" className="py-20 bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full border-2 border-gold mb-6">
-            <Star className="w-8 h-8 text-gold fill-current" />
+    <div id="sponsors" className="scroll-mt-20">
+      <section id="sponsors" className="relative min-h-screen bg-black pt-20 pb-24">
+        <div className="container mx-auto px-4">
+          <div className="relative z-10 mb-16 text-center" style={{ opacity: 1 }}>
+            <h2 className="mb-6 font-lora text-4xl font-bold text-white md:text-5xl">
+              Our Sponsors
+            </h2>
+            <p className="mx-auto max-w-3xl font-poppins text-lg text-gray-300">
+              Proudly supported by leading organizations committed to community development.
+            </p>
           </div>
-          <h2 className="text-4xl font-bold text-white mb-4 font-serif">Our Sponsors</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            We gratefully acknowledge the generous support of our sponsors who make the Heroes of Hyderabad 
-            awards possible and help us celebrate our community's finest.
-          </p>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {sponsors.map((sponsor, index) => (
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-lg bg-white/5 p-8 backdrop-blur border border-white/10 shadow-md transition-transform duration-300 hover:shadow-lg"
+                style={{ opacity: 1, transform: 'none' }}
+              >
+                <div className="relative w-full h-[200px] flex items-center justify-center">
+                   <img
+                    alt={sponsor.alt}
+                    src={sponsor.logo}
+                    className="object-contain transition-transform duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="mt-4 text-center">
+                  <h3 className="mb-1 font-lora text-xl font-bold text-white">
+                    {sponsor.name}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-20 text-center" style={{ opacity: 1, transform: 'none' }}>
+            <h3 className="mb-4 font-lora text-2xl font-bold text-white">
+              Become a Sponsor
+            </h3>
+            <button
+              onClick={handleGetInTouchClick}
+              className="mt-2 rounded-full bg-yellow-400 px-8 py-3 font-poppins text-lg font-semibold text-black hover:bg-yellow-500 transition-all cursor-pointer"
+            >
+              Get in Touch
+            </button>
+          </div>
         </div>
-        
-        
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
