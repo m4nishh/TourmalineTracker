@@ -766,30 +766,124 @@ export function GuestSection() {
           <div className="flex flex-col lg:flex-row items-center gap-8" style={{ opacity: 1, transform: "none" }}>
             <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
               <img
-                alt="Portrait of Hridoy Chakraborty"
+                alt="Portrait of Jayesh Ranjan"
                 loading="lazy"
                 decoding="async"
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=640&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=750&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=828&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=1080&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=1200&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=2048&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=3840&q=75 3840w
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 640w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 750w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 828w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1080w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1200w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1920w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 2048w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHRidoy.png&w=3840&q=75"
+                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
             <div className="w-full lg:w-1/2 text-center lg:text-left">
-              <h3 className="text-2xl font-bold text-white mb-2">Hridoy Chakraborty</h3>
-              <p className="text-yellow-400 font-semibold mb-2">Director - The Cuddling Club</p>
+              <h3 className="text-2xl font-bold text-white mb-2">Jayesh Ranjan</h3>
+              <p className="text-yellow-400 font-semibold mb-2">DKeynote Speaker</p>
               <p className="text-gray-300 text-base leading-relaxed">
-                Social entrepreneur and advocate for mental wellness.
+              Leading expert in sustainable urban development.
+              </p>
+            </div>
+          </div>
+          
+
+          {/* Guest 4 */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-8" style={{ opacity: 1, transform: "none" }}>
+            <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
+              <img
+                alt="Portrait of Aditi Arya Kotak"
+                loading="lazy"
+                decoding="async"
+                className="object-fit transition-transform duration-300 hover:scale-105"
+                sizes="100vw"
+                srcSet="
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 640w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 750w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 828w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1080w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1200w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1920w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 2048w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 3840w
+                "
+                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75"
+                style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+              />
+            </div>
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-white mb-2">Mamatha Madireddy</h3>
+              <p className="text-yellow-400 font-semibold mb-2">HSBC - GCC</p>
+              <p className="text-gray-300 text-base leading-relaxed">Managing Director</p>
+            </div>
+          </div>
+
+          {/* Guest 5 */}
+          <div className="flex flex-col lg:flex-row items-center gap-8" style={{ opacity: 1, transform: "none" }}>
+            <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
+              <img
+                alt="Portrait of Jayesh Ranjan"
+                loading="lazy"
+                decoding="async"
+                className="object-fit transition-transform duration-300 hover:scale-105"
+                sizes="100vw"
+                srcSet="
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 640w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 750w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 828w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1080w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1200w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1920w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 2048w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 3840w
+                "
+                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75"
+                style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+              />
+            </div>
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-white mb-2">Srinivas Rao Mahankali</h3>
+              <p className="text-yellow-400 font-semibold mb-2">T-Hub</p>
+              <p className="text-gray-300 text-base leading-relaxed">
+              Chief Executive Officer - T-Hub
+              </p>
+            </div>
+          </div>
+          {/* Guest 1 */}
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-8" style={{ opacity: 1, transform: "none" }}>
+            <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
+              <img
+                alt="Portrait of Shilpa Reddy"
+                loading="lazy"
+                decoding="async"
+                className="object-fit transition-transform duration-300 hover:scale-105"
+                sizes="100vw"
+                srcSet="
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 640w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 750w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 828w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1080w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1200w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1920w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 2048w,
+                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 3840w
+                "
+                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75"
+                style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+              />
+            </div>
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-white mb-2">Upasana Konidela</h3>
+              <p className="text-yellow-400 font-semibold mb-2">Apollo Group of Hospitals</p>
+              <p className="text-gray-300 text-base leading-relaxed">
+              Vice Chairperson
               </p>
             </div>
           </div>
@@ -797,6 +891,7 @@ export function GuestSection() {
       </div>
     </div>
   </div>
+  
   )}
 
   export function JurySection() {
@@ -916,7 +1011,7 @@ export function GuestSection() {
   const imageUrls = [
     'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson1.jpg&w=1920&q=75',
     'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson2.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson3.jpg&w=1920&q=75g',
+    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson3.jpg&w=1920&q=75',
     'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson4.jpg&w=1920&q=75',
     'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson5.jpg&w=1920&q=75',
     'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson6.jpg&w=1920&q=75',

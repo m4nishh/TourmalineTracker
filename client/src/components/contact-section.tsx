@@ -1,13 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Send, Star, Heart, Users, Award } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
+import { Send, Star, Heart, Users, Award } from "lucide-react";
 
 interface Sponsor {
   name: string;
@@ -39,10 +32,10 @@ const defaultSponsors: Sponsor[] = [
 ];
 
 export default function SponsorsSection({ 
-  sponsors = defaultSponsors,
-  onGetInTouchClick 
+  sponsors = defaultSponsors
 }: SponsorsProps) {
   const { toast } = useToast();
+
   const [formData, setFormData] = useState({
     nomineeName: "",
     nomineeContact: "",
@@ -52,6 +45,8 @@ export default function SponsorsSection({
     heroStory: "",
     impact: ""
   });
+
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -84,19 +79,14 @@ export default function SponsorsSection({
   ];
 
   const handleGetInTouchClick = () => {
-    if (onGetInTouchClick) {
-      onGetInTouchClick();
-    } else {
-      // Default behavior - you can modify this as needed
-      console.log('Get in touch clicked');
-    }
+    setShowPopup(true);
   };
 
   return (
     <div id="sponsors" className="scroll-mt-20">
-      <section id="sponsors" className="relative min-h-screen bg-black pt-20 pb-24">
+      <section className="relative min-h-screen bg-black pt-20 pb-24">
         <div className="container mx-auto px-4">
-          <div className="relative z-10 mb-16 text-center" style={{ opacity: 1 }}>
+          <div className="relative z-10 mb-16 text-center">
             <h2 className="mb-6 font-lora text-4xl font-bold text-white md:text-5xl">
               Our Sponsors
             </h2>
@@ -110,14 +100,12 @@ export default function SponsorsSection({
               <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg bg-white/5 p-8 backdrop-blur border border-white/10 shadow-md transition-transform duration-300 hover:shadow-lg"
-                style={{ opacity: 1, transform: 'none' }}
               >
                 <div className="relative w-full h-[200px] flex items-center justify-center">
-                   <img
+                  <img
                     alt={sponsor.alt}
                     src={sponsor.logo}
                     className="object-contain transition-transform duration-500 group-hover:scale-110"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
                 <div className="mt-4 text-center">
@@ -129,7 +117,7 @@ export default function SponsorsSection({
             ))}
           </div>
 
-          <div className="mt-20 text-center" style={{ opacity: 1, transform: 'none' }}>
+          <div className="mt-20 text-center">
             <h3 className="mb-4 font-lora text-2xl font-bold text-white">
               Become a Sponsor
             </h3>
@@ -141,6 +129,28 @@ export default function SponsorsSection({
             </button>
           </div>
         </div>
+
+        {/* Sponsorship Popup */}
+        {showPopup && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
+            <div className="relative w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-8 text-white">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="absolute top-4 right-4 text-2xl text-white/70 hover:text-red-500 transition-colors cursor-pointer"
+              >
+                ×
+              </button>
+              <h2 className="mb-4 font-lora text-2xl font-bold text-yellow-400">Sponsorship Opportunities</h2>
+              <p className="text-sm text-white/90 leading-relaxed whitespace-pre-wrap font-poppins">
+                Join us in recognizing and celebrating Hyderabad’s heroes. Contact us to learn about sponsorship opportunities.
+
+                <br /><br />
+                📧 Email: <a href="mailto:rajat@totawards.com" className="text-yellow-400 underline">rajat@totawards.com</a><br />
+                📞 Phone: <a href="tel:+916300112759" className="text-yellow-400 underline">+91 6300112759</a>
+              </p>
+            </div>
+          </div>
+        )}
       </section>
     </div>
   );
