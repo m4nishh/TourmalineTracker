@@ -1,7 +1,11 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 
-export default function Navigation() {
+type NavigationProps = {
+  onNominateClick: () => void;
+};
+
+export default function Navigation({ onNominateClick }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -135,7 +139,17 @@ export default function Navigation() {
           </div>
         </div>
       )}
-
+     <div className="fixed top-0 right-6 z-50 hidden lg:flex flex-col items-center">
+        <div className="flex flex-col items-center origin-top">
+          <div className="h-[45vh] w-[2px] bg-white/60 animate-pulse"></div>
+          <button
+            onClick={onNominateClick}
+            className="rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 px-6 py-3 font-bold text-black text-sm shadow-2xl hover:scale-105 transition-transform glow-effect origin-top cursor-pointer"
+          >
+            Nominate Now
+          </button>
+        </div>
+      </div>
       
     </nav>
   );
