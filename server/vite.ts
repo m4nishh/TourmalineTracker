@@ -75,7 +75,7 @@ export async function setupVite(app: Express, server: Server) {
 export function serveStatic(app: Express) {
   // Change from "public" to the parent directory since your build outputs to dist/
   // and your server is in dist/index.js, so the static files are in the same directory
-  const distPath = path.resolve(__dirname, "../");
+  const distPath = path.resolve(__dirname, "../client");
 
   if (!fs.existsSync(distPath)) {
     throw new Error(
