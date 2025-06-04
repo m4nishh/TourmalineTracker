@@ -948,16 +948,16 @@ export function GuestSection() {
                   className="object-contain transition-transform duration-300 group-hover:scale-105"
                   sizes="100vw"
                   srcSet="
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=640&q=75 640w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=750&q=75 750w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=828&q=75 828w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=1080&q=75 1080w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=1200&q=75 1200w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=1920&q=75 1920w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=2048&q=75 2048w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=3840&q=75 3840w
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 640w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 750w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 828w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 1080w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 1200w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 1920w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 2048w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg 3840w
                   "
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMeraj.jpeg&w=3840&q=75"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Meraj.jpeg"
                   style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
                 />
               </header>
@@ -979,22 +979,52 @@ export function GuestSection() {
                   className="object-contain transition-transform duration-300 group-hover:scale-105"
                   sizes="100vw"
                   srcSet="
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=640&q=75 640w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=750&q=75 750w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=828&q=75 828w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=1080&q=75 1080w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=1200&q=75 1200w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=1920&q=75 1920w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=2048&q=75 2048w,
-                    https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=3840&q=75 3840w
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 640w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 750w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 828w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 1080w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 1200w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 1920w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 2048w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg 3840w
                   "
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FDebashish.jpeg&w=3840&q=75"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Debashish.jpeg"
                   style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
                 />
               </header>
               <h3 className="mb-1 text-xl font-bold text-white">Debashish Ghosh</h3>
-              <p className="mb-2 text-sm font-semibold text-yellow-400">SVP & Country Head</p>
+              <p className="mb-2 text-sm font-semibold text-yellow-400">HR Expert & Influencer</p>
               <p className="text-gray-300 text-sm leading-relaxed">Berkadia</p>
+            </article>
+            <article
+              className="group relative overflow-hidden rounded-lg bg-white/5 p-6 backdrop-blur-sm transition-shadow hover:shadow-lg"
+              aria-label="Jury member Rajesh Dhuddu"
+              style={{ opacity: 1, transform: "none" }}
+            >
+              <header className="relative mb-4 h-64 w-full overflow-hidden rounded-lg">
+                <img
+                  alt="Portrait of Rajesh Dhuddu"
+                  loading="lazy"
+                  decoding="async"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  sizes="100vw"
+                  srcSet="
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 640w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 750w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 828w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 1080w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 1200w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 1920w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 2048w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg 3840w
+                  "
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Rajesh.jpeg"
+                  style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+                />
+              </header>
+              <h3 className="mb-1 text-xl font-bold text-white">Rajesh Dhuddu</h3>
+              <p className="mb-2 text-sm font-semibold text-yellow-400">PwC Partner - Emerging Tech | Forbes Blockchain 50 | Most Inspiring Web 3 leader</p>
+              <p className="text-gray-300 text-sm leading-relaxed">CXO Innovator of the year</p>
             </article>
           </div>
         </div>
@@ -1215,7 +1245,7 @@ export function WhatIsHoH() {
     const clampedScroll = Math.min(scrollY, 300); // adjust 300 as needed
   
     // Interpolate scale and opacity
-    const scale = 0.8 + (clampedScroll / 300) * 0.2; // 0.8 → 1.0
+    const scale = 1.2 + (clampedScroll / 300) * 0.2; // 0.8 → 1.0
     const opacity = 1 - clampedScroll / 300; // 1 → 0
   
     return (
@@ -1231,8 +1261,8 @@ export function WhatIsHoH() {
                 decoding="async"
                 className="object-contain transition-transform duration-300"
                 sizes="100vw"
-                srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=640&q=75 640w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=750&q=75 750w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=828&q=75 828w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1080&q=75 1080w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1200&q=75 1200w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75 1920w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=2048&q=75 2048w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=3840&q=75 3840w"
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=3840&q=75"
+                srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=640&q=75 640w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=750&q=75 750w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=828&q=75 828w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1080&q=75 1080w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1200&q=75 1200w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75 1920w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=2048&q=75 2048w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75 3840w"
+                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75"
                 style={{
                   position: "absolute",
                   height: "100%",
@@ -1258,7 +1288,7 @@ export function WhatIsHoH() {
               </p>
             </div>
   
-            <div
+            {/* <div
               className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2"
               style={{ opacity }}
             >
@@ -1268,7 +1298,7 @@ export function WhatIsHoH() {
                   style={{ transform: "translateY(2.44646px)" }}
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
