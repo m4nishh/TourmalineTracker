@@ -73,19 +73,9 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
+  // Change from "public" to the parent directory since your build outputs to dist/
+  // and your server is in dist/index.js, so the static files are in the same directory
   const distPath = path.resolve(__dirname, "../");
-  
-  console.log('Current __dirname:', __dirname);
-  console.log('Resolved distPath:', distPath);
-  console.log('Directory exists:', fs.existsSync(distPath));
-  
-  if (fs.existsSync(distPath)) {
-    console.log('Files in distPath:', fs.readdirSync(distPath));
-  }
-  
-  const indexPath = path.resolve(distPath, "index.html");
-  console.log('Index.html path:', indexPath);
-  console.log('Index.html exists:', fs.existsSync(indexPath));
 
   if (!fs.existsSync(distPath)) {
     throw new Error(
@@ -93,8 +83,10 @@ export function serveStatic(app: Express) {
     );
   }
 
+  // Serve static files (JS, CSS, images, etc.)
   app.use(express.static(distPath));
 
+  // Handle client-side routing - serve index.html for all non-API routes
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
