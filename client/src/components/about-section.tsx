@@ -37,33 +37,33 @@ interface AdvisoryMember {
 
 const members: AdvisoryMember[] = [
   {
-    name: 'Dr. Sarah Johnson',
-    title: 'Education Expert',
+    name: 'Rashi Shrivastava',
+    title: 'CTO - Qentelli',
     description: 'Leading educational reform initiatives in Hyderabad for over 15 years.',
-    imageAlt: 'Portrait of Dr. Sarah Johnson',
-    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974',
+    imageAlt: 'Rashi Shrivastava',
+    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+1.png',
   },
   {
-    name: 'Rajesh Kumar',
-    title: 'Tech Innovator',
+    name: 'Pavani Saripella',
+    title: 'Head-Resource Management Group Tech-Mahindra BPS ',
     description: 'Pioneering sustainable technology solutions for urban development.',
-    imageAlt: 'Portrait of Rajesh Kumar',
-    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976',
+    imageAlt: 'Portrait of Pavani Saripella',
+    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+2+(2).png',
   },
   {
-    name: 'Dr. Priya Sharma',
-    title: 'Healthcare Leader',
+    name: 'Srinivas Rao',
+    title: 'Mahankali (MSR)',
     description: 'Transforming healthcare accessibility in underserved communities.',
-    imageAlt: 'Portrait of Dr. Priya Sharma',
-    imageUrl: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1974',
+    imageAlt: 'Portrait of Srinivas Rao',
+    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+2.png',
   },
-  {
-    name: 'Amit Patel',
-    title: 'Social Entrepreneur',
-    description: 'Driving innovation through community-led social ventures.',
-    imageAlt: 'Portrait of Amit Patel',
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961',
-  },
+  // {
+  //   name: 'Amit Patel',
+  //   title: 'Social Entrepreneur',
+  //   description: 'Driving innovation through community-led social ventures.',
+  //   imageAlt: 'Portrait of Amit Patel',
+  //   imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961',
+  // },
 ];
 
 
@@ -650,7 +650,7 @@ export function WhoNominateSection() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
                 <p className="text-yellow-400 text-sm font-semibold mb-2">{member.title}</p>
-                <p className="text-gray-300 text-sm leading-relaxed">{member.description}</p>
+                {/* <p className="text-gray-300 text-sm leading-relaxed">{member.description}</p> */}
               </div>
             ))}
           </div>
@@ -1105,7 +1105,7 @@ export function GuestSection() {
           {imageUrls.map((url, idx) => (
             <div
               key={idx}
-              className="absolute top-0 left-0 w-[180px] h-[240px] shadow-lg"
+              className="absolute top-0 left-0 w-[280px] h-[340px] shadow-lg"
               style={{
                 transform: `rotateY(${idx * 60}deg) translateZ(350px)`,
                 transformStyle: 'preserve-3d',

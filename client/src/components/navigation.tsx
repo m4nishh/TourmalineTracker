@@ -46,6 +46,18 @@ export default function Navigation({ onNominateClick }: NavigationProps) {
       {/* Desktop Navigation */}
       <div className="mx-auto hidden max-w-[1920px] grid-cols-5 items-center px-6 text-white md:grid h-24">
         <div className="flex justify-center">
+          <div className="mr-10 flex items-center">
+          <img
+            alt="Heroes of Hyderabad logo"
+            loading="lazy"
+            width={100}
+            height={50}
+            decoding="async"
+            className="object-contain"
+            src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/tot-awards-logo.png"
+            style={{ color: "transparent" }}
+          />
+          </div>
           <button
             className="group relative cursor-pointer text-sm font-medium uppercase tracking-wide"
             onClick={() => scrollToSection('jury')}

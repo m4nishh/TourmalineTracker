@@ -204,4 +204,4 @@ export const NominationForm: React.FC<NominationFormProps> = ({
       </div>
     </div>
   );
-}
+};
