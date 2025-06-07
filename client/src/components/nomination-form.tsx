@@ -92,7 +92,7 @@ const SelectItem: React.FC<SelectItemProps> = ({ value, children }) => (
 const Send = () => <span>📤</span>;
 
 // New interface for form data
-export interface FormData {
+export interface NominationFormData {
   name: string;
   organization: string;
   designation: string;
@@ -105,13 +105,13 @@ export interface FormData {
 }
 
 interface NominationFormProps {
-  formData: FormData;
+  formData: NominationFormData;
   categories: { label: string; value: string }[];
-  handleInputChange: (field: keyof FormData, value: string | File | null) => void;
+  handleInputChange: (field: keyof NominationFormData, value: string | File | null) => void;
   handleSubmit: () => void;
   isVisible: boolean;
   onClose: () => void;
-  formErrors: Partial<Record<keyof FormData, string>>;
+  formErrors: Partial<Record<keyof NominationFormData, string>>;
 }
 
 export const NominationForm: React.FC<NominationFormProps> = ({
@@ -377,145 +377,3 @@ export const NominationForm: React.FC<NominationFormProps> = ({
     </div>
   );
 };
-
-// Demo usage component
-export default function App() {
-  const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    organization: "",
-    designation: "",
-    email: "",
-    contactNo: "",
-    linkedin: "",
-    category: "",
-    photo: null,
-    writeUp: "",
-  });
-
-  const [formErrors, setFormErrors] = useState<Partial<Record<keyof FormData, string>>>(
-    {}
-  );
-
-  const handleInputChange = (
-    field: keyof FormData,
-    value: string | File | null
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [field]: value,
-    }));
-
-    // Clear error on field change
-    setFormErrors((prev) => {
-      const updated = { ...prev };
-      delete updated[field];
-      return updated;
-    });
-  };
-
-  const handleSubmit = async () => {
-    const errors: Partial<Record<keyof FormData, string>> = {};
-  
-    if (!formData.name.trim()) errors.name = "Name is required";
-    if (!formData.organization.trim()) errors.organization = "Organization is required";
-    if (!formData.designation.trim()) errors.designation = "Designation is required";
-    if (!formData.email.trim()) errors.email = "Email is required";
-    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email.trim()))
-      errors.email = "Invalid email address";
-    if (!formData.contactNo.trim()) errors.contactNo = "Contact number is required";
-    if (!formData.category) errors.category = "Please select a category";
-    if (!formData.photo) errors.photo = "Photo upload is required";
-    if (!formData.writeUp.trim()) errors.writeUp = "Write-up is required";
-  
-    setFormErrors(errors);
-    if (Object.keys(errors).length > 0) return;
-  
-    try {
-      const submissionData = new FormData();
-      submissionData.append("name", formData.name);
-      submissionData.append("organization", formData.organization);
-      submissionData.append("designation", formData.designation);
-      submissionData.append("email", formData.email);
-      submissionData.append("contactNo", formData.contactNo);
-      submissionData.append("linkedin", formData.linkedin);
-      submissionData.append("category", formData.category);
-      submissionData.append("writeUp", formData.writeUp);
-      if (formData.photo) {
-        submissionData.append("photo", formData.photo);
-      }
-  
-      const response = await fetch("http://localhost:4000/api/submit-nomination", {
-        method: "POST",
-        body: submissionData,
-      });
-  
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-  
-      const result = await response.json();
-      alert("Form submitted successfully!");
-  
-      // Reset
-      setFormData({
-        name: "",
-        organization: "",
-        designation: "",
-        email: "",
-        contactNo: "",
-        linkedin: "",
-        category: "",
-        photo: null,
-        writeUp: "",
-      });
-      setFormErrors({});
-      setShowForm(false);
-    } catch (error) {
-      console.error("Submission error:", error);
-      alert("Failed to submit. Please try again later.");
-    }
-  };
-  
-
-  const categories = [
-    { label: "Healthcare Hero", value: "healthcare" },
-    { label: "Education Champion", value: "education" },
-    { label: "Community Star", value: "community" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <Button
-        onClick={() => setShowForm(true)}
-        className="bg-blue-500 text-white hover:bg-blue-600"
-      >
-        Open Nomination Form
-      </Button>
-
-      <NominationForm
-        isVisible={showForm}
-        onClose={() => setShowForm(false)}
-        formData={formData}
-        handleInputChange={handleInputChange}
-        handleSubmit={handleSubmit}
-        categories={categories}
-        formErrors={formErrors}
-      />
-
-      <div className="mt-8 p-4 bg-white rounded shadow">
-        <h3 className="font-bold mb-2">Current Form Data (Live Updates):</h3>
-        <pre className="text-sm bg-gray-100 p-2 rounded overflow-auto">
-          {JSON.stringify(
-            {
-              ...formData,
-              photo: formData.photo ? formData.photo.name : null,
-            },
-            null,
-            2
-          )}
-        </pre>
-      </div>
-    </div>
-  );
-}

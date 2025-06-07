@@ -5,12 +5,15 @@ import DignitariesSection from "@/components/technology-showcase";
 import {AwardsSection, EventsSection, WhyUniqueSection, WhoNominateSection, WhyNowSection, AdvisorySection, GuestSection, JurySection, MemoryRideSection, WhatIsHoH, IntroSection} from "@/components/about-section";
 import SponsorsSection from "@/components/contact-section";
 import Footer from "@/components/footer";
-import { useState, useCallback } from "react";
-import { NominationForm, FormData } from "@/components/nomination-form";
+import { useState } from "react";
+import { NominationForm, NominationFormData } from "@/components/nomination-form";
 
+const submitNominationUrl = "http://localhost:4000/api/submit-nomination";
+const uloadPhotoUrl = "http://localhost:4000/api/upload-photo";
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
-  const [formData, setFormData] = useState<FormData>({
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState<NominationFormData>({
     name: "",
     organization: "",
     designation: "",
@@ -18,19 +21,18 @@ export default function Home() {
     contactNo: "",
     linkedin: "",
     category: "",
-    photo: null,  // Assuming file type or string URL, adjust in FormData
+    photo: null,
     writeUp: ""
   });
 
-  const [formErrors, setFormErrors] = useState<Partial<Record<keyof FormData, string>>>({});
+  const [formErrors, setFormErrors] = useState<Partial<Record<keyof NominationFormData, string>>>({});
 
-  const handleInputChange = (field: keyof FormData, value: string | File | null) => {
+  const handleInputChange = (field: keyof NominationFormData, value: string | File | null) => {
     setFormData((prev) => ({
       ...prev,
       [field]: value,
     }));
 
-    // Clear error for this field when user edits it
     setFormErrors((prev) => {
       const updated = { ...prev };
       delete updated[field];
@@ -38,37 +40,114 @@ export default function Home() {
     });
   };
 
-  const handleSubmit = () => {
-    const errors: Partial<Record<keyof FormData, string>> = {};
+const uploadPhotoToS3 = async (file: File): Promise<string> => {
+      if (!uloadPhotoUrl) {
+        throw new Error("Upload photo URL is not defined");
+      }
+      const formData = new FormData();
+      formData.append("photo", file);
+
+      const res = await fetch(uloadPhotoUrl, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to upload image");
+      }
+
+      const data = await res.json();
+      return data.url;
+    };
+
+
+  const handleSubmit = async () => {
+    const errors: Partial<Record<keyof NominationFormData, string>> = {};
 
     if (!formData.name.trim()) errors.name = "Name is required";
     if (!formData.organization.trim()) errors.organization = "Organization is required";
     if (!formData.designation.trim()) errors.designation = "Designation is required";
     if (!formData.email.trim()) errors.email = "Email is required";
-    if (!formData.contactNo.trim()) errors.contactNo = "Contact No is required";
+    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email.trim()))
+      errors.email = "Invalid email address";
+    if (!formData.contactNo.trim()) errors.contactNo = "Contact number is required";
     if (!formData.category) errors.category = "Please select a category";
-    if (!formData.photo) errors.photo = "Please upload a photo";
+    if (!formData.photo) errors.photo = "Photo upload is required";
     if (!formData.writeUp.trim()) errors.writeUp = "Write-up is required";
 
     setFormErrors(errors);
-
     if (Object.keys(errors).length > 0) return;
 
-    console.log('Form submitted', formData);
-    alert('Form submitted successfully!');
-    setFormData({
-      name: "",
-      organization: "",
-      designation: "",
-      email: "",
-      contactNo: "",
-      linkedin: "",
-      category: "",
-      photo: null,
-      writeUp: "",
-    });
-    setFormErrors({});
-    setShowForm(false);
+    setIsSubmitting(true);
+
+    try {
+      let photoUrl = "";
+      if (formData.photo) {
+        if (formData.photo) {
+          photoUrl = await uploadPhotoToS3(formData.photo);
+        }
+      }
+
+      // Find the selected category label
+      const selectedCategory = categories.find(cat => cat.value === formData.category);
+
+      // Prepare data in the format expected by your API
+      const submissionData = {
+        name: formData.name.trim(),
+        organization: formData.organization.trim(),
+        designation: formData.designation.trim(),
+        email: formData.email.trim(),
+        contact_no: formData.contactNo.trim(),
+        linkedin: formData.linkedin.trim() || "",
+        categories: selectedCategory?.label || formData.category, // Use label as per API spec
+        upload_photo: photoUrl, // This should be a URL, not a file
+        write_up: formData.writeUp.trim()
+      };
+
+      console.log("Submitting data:", submissionData);
+
+      if (!submitNominationUrl) {
+        throw new Error("Submit nomination URL is not defined");
+      }
+      const response = await fetch(submitNominationUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("Submission successful:", result);
+      alert("Form submitted successfully!");
+
+      // Reset form
+      setFormData({
+        name: "",
+        organization: "",
+        designation: "",
+        email: "",
+        contactNo: "",
+        linkedin: "",
+        category: "",
+        photo: null,
+        writeUp: "",
+      });
+      setFormErrors({});
+      setShowForm(false);
+      
+    } catch (error) {
+      console.error("Submission error:", error);
+      const errorMessage = (error instanceof Error && error.message) ? error.message : 'Please try again later.';
+      alert(`Failed to submit: ${errorMessage}`);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const categories = [
@@ -103,6 +182,15 @@ export default function Home() {
           formErrors={formErrors}
         />
 
+        {/* Loading overlay for form submission */}
+        {isSubmitting && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[10000]">
+            <div className="bg-white p-6 rounded-lg">
+              <p className="text-black">Submitting nomination...</p>
+            </div>
+          </div>
+        )}
+
         <WhatIsHoH />
         <MemoryRideSection />
         <JurySection />
@@ -118,4 +206,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};

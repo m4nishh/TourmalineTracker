@@ -4,6 +4,7 @@ import cors from 'cors';
 import nominationRoutes from './routes/nominationRoutes.ts';
 import { sequelize } from './config/db.ts';
 import Nomination from './models/Nomination.ts';
+import upload from './routes/upload.ts';
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', nominationRoutes);
+app.use('/api', upload);
 
 // DB sync and start server
 sequelize.sync().then(() => {
