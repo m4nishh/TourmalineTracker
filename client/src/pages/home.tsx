@@ -8,8 +8,8 @@ import Footer from "@/components/footer";
 import { useState } from "react";
 import { NominationForm, NominationFormData } from "@/components/nomination-form";
 
-const submitNominationUrl = "http://localhost:4000/api/submit-nomination";
-const uloadPhotoUrl = "http://localhost:4000/api/upload-photo";
+const submitNominationUrl = "http://13.48.236.230:4000/api/submit-nomination";
+const uloadPhotoUrl = "http://13.48.236.230:4000/api/upload-photo";
 export default function Home() {
   const [showForm, setShowForm] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
