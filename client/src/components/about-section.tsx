@@ -133,7 +133,7 @@ export  function EventsSection() {
           decoding="async"
           className="object-cover opacity-20"
           sizes="100vw"
-          src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=3840&q=75"
+          src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp"
           style={{
             position: 'absolute',
             height: '100%',
@@ -164,7 +164,7 @@ export  function EventsSection() {
               decoding="async"
               className="object-cover transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fevent.jpeg&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/GrandCeromony.webp"
               style={{
                 position: 'absolute',
                 height: '100%',
@@ -187,7 +187,7 @@ export  function EventsSection() {
               decoding="async"
               className="object-cover transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fnetworking.webp&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Networking.webp"
               style={{
                 position: 'absolute',
                 height: '100%',
@@ -210,7 +210,7 @@ export  function EventsSection() {
               decoding="async"
               className="object-cover transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fcelebration.jpeg&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Celebration.webp"
               style={{
                 position: 'absolute',
                 height: '100%',
@@ -243,15 +243,15 @@ export  function EventsSection() {
           decoding="async"
           className="object-cover opacity-20"
           sizes="100vw"
-          srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=640&q=75 640w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=750&q=75 750w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=828&q=75 828w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1080&q=75 1080w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1200&q=75 1200w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1920&q=75 1920w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=2048&q=75 2048w,
-                   https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=3840&q=75 3840w"
-          src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=3840&q=75"
+          srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 640w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 750w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 828w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1080w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1200w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1920w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 2048w,
+                   https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 3840w"
+          src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp"
           style={{
             position: "absolute",
             height: "100%",
@@ -282,15 +282,15 @@ export  function EventsSection() {
               decoding="async"
               className="object-fill transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=640&q=75 640w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=750&q=75 750w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=828&q=75 828w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=1080&q=75 1080w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=1200&q=75 1200w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=1920&q=75 1920w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=2048&q=75 2048w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=3840&q=75 3840w"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fteam.jpeg&w=3840&q=75"
+              srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 640w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 750w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 828w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 1080w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 1200w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 1920w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 2048w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp 3840w"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CompRecog.webp"
               style={{
                 position: "absolute",
                 height: "100%",
@@ -315,15 +315,15 @@ export  function EventsSection() {
               decoding="async"
               className="object-fill transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=640&q=75 640w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=750&q=75 750w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=828&q=75 828w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=1080&q=75 1080w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=1200&q=75 1200w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=1920&q=75 1920w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=2048&q=75 2048w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=3840&q=75 3840w"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=3840&q=75"
+              srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 640w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 750w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 828w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 1080w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 1200w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 1920w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 2048w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp 3840w"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp"
               style={{
                 position: "absolute",
                 height: "100%",
@@ -348,15 +348,15 @@ export  function EventsSection() {
               decoding="async"
               className="object-fill transition-transform duration-300 group-hover:scale-110"
               sizes="100vw"
-              srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=640&q=75 640w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=750&q=75 750w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=828&q=75 828w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=1080&q=75 1080w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=1200&q=75 1200w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=1920&q=75 1920w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=2048&q=75 2048w,
-                       https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=3840&q=75 3840w"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fplatform.jpg&w=3840&q=75"
+              srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 640w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 750w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 828w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 1080w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 1200w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 1920w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 2048w,
+                       https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp 3840w"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/PrestigiousPlat.webp"
               style={{
                 position: "absolute",
                 height: "100%",
@@ -393,7 +393,7 @@ export function WhoNominateSection() {
               decoding="async"
               className="object-cover opacity-20"
               sizes="100vw"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp"
               style={{
                 position: "absolute",
                 height: "100%",
@@ -425,25 +425,25 @@ export function WhoNominateSection() {
             {[
               {
                 title: "Community Leaders",
-                image: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fcommunity.png&w=3840&q=75",
+                image: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/CommunityLeaders.webp",
                 alt: "Category: Community Leaders",
                 desc: "Individuals who have made significant contributions to community development and social welfare.",
               },
               {
                 title: "Innovators",
-                image: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Finnovation.jpg&w=3840&q=75",
+                image: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Innovators.webp",
                 alt: "Category: Innovators",
                 desc: "Visionaries who have brought groundbreaking innovations to Hyderabad.",
               },
               {
                 title: "Educators",
-                image: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Feducation.jpg&w=3840&q=75",
+                image: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/educators.webp",
                 alt: "Category: Educators",
                 desc: "Dedicated teachers and educational leaders shaping the future of our youth.",
               },
               {
                 title: "Healthcare Heroes",
-                image: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fhealthcare.jpg&w=3840&q=75",
+                image: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Healthheros.webp",
                 alt: "Category: Healthcare Heroes",
                 desc: "Medical professionals and healthcare workers making a difference in people's lives.",
               },
@@ -500,7 +500,7 @@ export function WhoNominateSection() {
               decoding="async"
               className="object-cover opacity-20"
               sizes="100vw"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back3.webp"
               style={{
                 position: 'absolute',
                 height: '100%',
@@ -536,7 +536,7 @@ export function WhoNominateSection() {
                   decoding="async"
                   className="object-fill transition-transform duration-300 group-hover:scale-110"
                   sizes="100vw"
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FnewEra.png&w=3840&q=75"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/NewERa.webp"
                   style={{
                     position: 'absolute',
                     height: '100%',
@@ -562,7 +562,7 @@ export function WhoNominateSection() {
                   decoding="async"
                   className="object-fill transition-transform duration-300 group-hover:scale-110"
                   sizes="100vw"
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fraising_momentum.webp&w=3840&q=75"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/RisingMomentum.webp"
                   style={{
                     position: 'absolute',
                     height: '100%',
@@ -588,7 +588,7 @@ export function WhoNominateSection() {
                   decoding="async"
                   className="object-fill transition-transform duration-300 group-hover:scale-110"
                   sizes="100vw"
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fseeds_of_innovation.png&w=3840&q=75"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jury-driven.webp"
                   style={{
                     position: 'absolute',
                     height: '100%',
@@ -619,7 +619,7 @@ export function WhoNominateSection() {
             <img
               alt="Judges Silhouettes"
               className="object-cover opacity-20"
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back3.webp"
               style={{ position: 'absolute', height: '100%', width: '100%', inset: 0, color: 'transparent' }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
@@ -676,16 +676,16 @@ export function GuestSection() {
             className="object-cover opacity-20"
             sizes="100vw"
             srcSet="
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=640&q=75 640w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=750&q=75 750w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=828&q=75 828w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=1080&q=75 1080w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=1200&q=75 1200w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=1920&q=75 1920w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=2048&q=75 2048w,
-              https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=3840&q=75 3840w
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 640w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 750w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 828w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 1080w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 1200w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 1920w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 2048w,
+              https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp 3840w
             "
-            src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1501281668745-f7f57925c3b4%3Fq%3D80%26w%3D2070&w=3840&q=75"
+            src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back4.webp"
             style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
@@ -710,16 +710,16 @@ export function GuestSection() {
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=640&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=750&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=828&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=1080&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=1200&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=2048&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=3840&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fshilpa_reddy.png&w=3840&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/shilpaVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -742,16 +742,16 @@ export function GuestSection() {
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=640&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=750&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=828&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=1080&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=1200&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=2048&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=3840&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FAditi_Arya.png&w=3840&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/AditiVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -772,16 +772,16 @@ export function GuestSection() {
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FJayesh_Ranjan.png&w=1920&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/jayeshVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -799,22 +799,22 @@ export function GuestSection() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8" style={{ opacity: 1, transform: "none" }}>
             <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
               <img
-                alt="Portrait of Aditi Arya Kotak"
+                alt="Portrait of mamatha"
                 loading="lazy"
                 decoding="async"
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FMamatha_Madireddy.png&w=1920&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/mamathaVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -829,22 +829,22 @@ export function GuestSection() {
           <div className="flex flex-col lg:flex-row items-center gap-8" style={{ opacity: 1, transform: "none" }}>
             <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
               <img
-                alt="Portrait of Jayesh Ranjan"
+                alt="Portrait of Srinivas Rao"
                 loading="lazy"
                 decoding="async"
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FSrinivas_Rao.png&w=1920&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/SrinivasVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -860,22 +860,22 @@ export function GuestSection() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-8" style={{ opacity: 1, transform: "none" }}>
             <div className="relative h-80 w-full lg:w-1/2 overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-lg">
               <img
-                alt="Portrait of Shilpa Reddy"
+                alt="Portrait of Upasana Konidela"
                 loading="lazy"
                 decoding="async"
                 className="object-fit transition-transform duration-300 hover:scale-105"
                 sizes="100vw"
                 srcSet="
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 640w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 750w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 828w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1080w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1200w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 1920w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 2048w,
-                  https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75 3840w
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 640w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 750w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 828w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 1080w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 1200w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 1920w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 2048w,
+                  https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp 3840w
                 "
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FUpasana_Konidela.png&w=1920&q=75"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/UpasanaVIP.webp"
                 style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
               />
             </div>
@@ -910,16 +910,16 @@ export function GuestSection() {
               className="object-cover opacity-20"
               sizes="100vw"
               srcSet="
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=640&q=75 640w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=750&q=75 750w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=828&q=75 828w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=1080&q=75 1080w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=1200&q=75 1200w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=1920&q=75 1920w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=2048&q=75 2048w,
-                https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=3840&q=75 3840w
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 640w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 750w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 828w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 1080w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 1200w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 1920w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 2048w,
+                https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp 3840w
               "
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1589829545856-d10d557cf95f%3Fq%3D80%26w%3D2070&w=3840&q=75"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back5.webp"
               style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
@@ -1033,28 +1033,26 @@ export function GuestSection() {
     )}
 
 
-    export function MemoryRideSection() {
-      const rotateRef = useRef<HTMLDivElement>(null);
+export function MemoryRideSection() {
+  const rotateRef = useRef<HTMLDivElement>(null);
   const [angle, setAngle] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Different images
   const imageUrls = [
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson1.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson2.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson3.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson4.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson5.jpg&w=1920&q=75',
-    'https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fperson6.jpg&w=1920&q=75',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person1.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person2.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person3.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person4.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person5.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person6.webp',
   ];
 
   useEffect(() => {
     let frameId: number;
-
     const rotate = () => {
       setAngle((prev) => prev + 0.2);
       frameId = requestAnimationFrame(rotate);
     };
-
     rotate();
     return () => cancelAnimationFrame(frameId);
   }, []);
@@ -1063,24 +1061,12 @@ export function GuestSection() {
     <section className="relative z-30 min-h-screen bg-black py-20 overflow-hidden text-white">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="relative h-full w-full">
-          <img
-            alt="Memory Ride Background"
-            loading="lazy"
-            decoding="async"
-            className="object-cover opacity-20"
-            sizes="100vw"
-            src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fhyd.jpeg&w=3840&q=75"
-            style={{
-              position: 'absolute',
-              height: '100%',
-              width: '100%',
-              inset: 0,
-              color: 'transparent',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
-        </div>
+        <img
+          alt="Memory Ride Background"
+          className="object-cover opacity-20 absolute inset-0 w-full h-full"
+          src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back2.webp"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
       </div>
 
       {/* Title */}
@@ -1108,31 +1094,46 @@ export function GuestSection() {
               className="absolute top-0 left-0 w-[280px] h-[340px] shadow-lg"
               style={{
                 transform: `rotateY(${idx * 60}deg) translateZ(350px)`,
-                transformStyle: 'preserve-3d',
               }}
             >
-              <div className="w-full h-full overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur cursor-pointer">
+              <div
+                className="w-full h-full overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur cursor-pointer"
+                onClick={() => setSelectedImage(url)}
+              >
                 <img
                   alt={`Carousel ${idx}`}
-                  loading="lazy"
-                  decoding="async"
                   className="w-full h-full object-cover"
                   src={url}
-                  style={{
-                    position: 'absolute',
-                    height: '100%',
-                    width: '100%',
-                    inset: 0,
-                    color: 'transparent',
-                  }}
                 />
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+  <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center px-4">
+    <div className="relative">
+      <button
+        className="absolute top-[-20px] right-[-20px] text-white text-3xl font-bold hover:text-red-400 bg-black rounded-full w-10 h-10 flex items-center justify-center"
+        onClick={() => setSelectedImage(null)}
+      >
+        ×
+      </button>
+      <img
+        src={selectedImage}
+        alt="Full View"
+        className="w-full max-w-[90vw] md:max-w-[500px] max-h-[80vh] rounded-xl shadow-2xl border border-white/10"
+      />
+    </div>
+  </div>
+)}
+
     </section>
-  );}
+  );
+}
+
 
 
 export function WhatIsHoH() {
@@ -1151,8 +1152,8 @@ export function WhatIsHoH() {
               data-nimg="fill"
               className="object-cover opacity-10 transition-opacity duration-700"
               sizes="100vw"
-              srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=640&q=75 640w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=750&q=75 750w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=828&q=75 828w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1080&q=75 1080w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1200&q=75 1200w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=1920&q=75 1920w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=2048&q=75 2048w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=3840&q=75 3840w"
-              src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1511795409834-ef04bbd61622%3Fq%3D80%26w%3D2069&w=3840&q=75"
+              srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 640w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 750w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 828w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1080w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1200w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 1920w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 2048w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp 3840w"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back1.webp"
               style={{
                 position: "absolute",
                 height: "100%",
@@ -1210,8 +1211,8 @@ export function WhatIsHoH() {
                   data-nimg="fill"
                   className="rounded-lg object-contain"
                   sizes="100vw"
-                  srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=640&q=75 640w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=750&q=75 750w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=828&q=75 828w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=1080&q=75 1080w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=1200&q=75 1200w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=1920&q=75 1920w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=2048&q=75 2048w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=3840&q=75 3840w"
-                  src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Ftrophy.jpeg&w=3840&q=75"
+                  srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 640w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 750w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 828w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 1080w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 1200w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 1920w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 2048w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp 3840w"
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/hoh-trophy-in-hand.webp"
                   style={{
                     position: "absolute",
                     height: "100%",
@@ -1261,8 +1262,8 @@ export function WhatIsHoH() {
                 decoding="async"
                 className="object-contain transition-transform duration-300"
                 sizes="100vw"
-                srcSet="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=640&q=75 640w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=750&q=75 750w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=828&q=75 828w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1080&q=75 1080w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1200&q=75 1200w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75 1920w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=2048&q=75 2048w, https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75 3840w"
-                src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Fdesktop_21_9_v2.jpg&w=1920&q=75"
+                srcSet="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 640w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 750w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 828w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 1080w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 1200w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 1920w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 2048w, https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp 3840w"
+                src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/charminar.webp"
                 style={{
                   position: "absolute",
                   height: "100%",

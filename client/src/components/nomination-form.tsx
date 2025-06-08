@@ -254,28 +254,34 @@ export const NominationForm: React.FC<NominationFormProps> = ({
 
                 <div className="space-y-6">
                   <div>
-                    <Label
-                      htmlFor="contactNo"
-                      className="text-sm font-medium text-gray-300 mb-2"
-                    >
-                      Contact No *
-                    </Label>
-                    <Input
-                      id="contactNo"
-                      name="contactNo"
-                      type="text"
-                      value={formData.contactNo}
-                      onChange={(e) => handleInputChange("contactNo", e.target.value)}
-                      placeholder="Phone number"
-                      className={`mt-2 bg-black text-white ${
-                        formErrors.contactNo ? "border-red-500" : "border-gray-700"
-                      }`}
-                      autoComplete="off"
-                    />
-                    {formErrors.contactNo && (
-                      <p className="text-red-500 text-sm mt-1">{formErrors.contactNo}</p>
-                    )}
-                  </div>
+  <Label
+    htmlFor="contactNo"
+    className="text-sm font-medium text-gray-300 mb-2"
+  >
+    Contact No *
+  </Label>
+  <Input
+    id="contactNo"
+    name="contactNo"
+    type="text"
+    value={formData.contactNo}
+    onChange={(e) => {
+      const input = e.target.value;
+      if (/^\d*$/.test(input)) {
+        handleInputChange("contactNo", input);
+      }
+    }}
+    placeholder="Phone number"
+    className={`mt-2 bg-black text-white ${
+      formErrors.contactNo ? "border-red-500" : "border-gray-700"
+    }`}
+    autoComplete="off"
+    maxLength={10}
+  />
+  {formErrors.contactNo && (
+    <p className="text-red-500 text-sm mt-1">{formErrors.contactNo}</p>
+  )}
+</div>
 
                   <div>
                     <Label
