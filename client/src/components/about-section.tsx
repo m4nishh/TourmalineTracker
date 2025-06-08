@@ -994,7 +994,6 @@ export function GuestSection() {
               </header>
               <h3 className="mb-1 text-xl font-bold text-white">Debashish Ghosh</h3>
               <p className="mb-2 text-sm font-semibold text-yellow-400">HR Expert & Influencer</p>
-              <p className="text-gray-300 text-sm leading-relaxed">Berkadia</p>
             </article>
             <article
               className="group relative overflow-hidden rounded-lg bg-white/5 p-6 backdrop-blur-sm transition-shadow hover:shadow-lg"
