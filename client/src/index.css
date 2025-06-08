@@ -49,6 +49,9 @@
   --radius: 0.5rem;
   --gold: 45 100% 50%;
 }
+.mr-10 {
+    margin-right: 8.5rem;
+}
 
 @layer base {
   * {
