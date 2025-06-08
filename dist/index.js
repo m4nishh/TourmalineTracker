@@ -19,6 +19,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import { fileURLToPath } from "url";
+var __filename = fileURLToPath(import.meta.url);
+var __dirname = path.dirname(__filename);
 var vite_config_default = defineConfig({
   plugins: [
     react(),
@@ -31,20 +34,22 @@ var vite_config_default = defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets")
+      "@": path.resolve(__dirname, "client", "src"),
+      "@shared": path.resolve(__dirname, "shared"),
+      "@assets": path.resolve(__dirname, "attached_assets")
     }
   },
-  root: path.resolve(import.meta.dirname, "client"),
+  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true
+    outDir: path.resolve(__dirname, "client/dist")
   }
 });
 
 // server/vite.ts
 import { nanoid } from "nanoid";
+import { fileURLToPath as fileURLToPath2 } from "url";
+var __filename2 = fileURLToPath2(import.meta.url);
+var __dirname2 = path2.dirname(__filename2);
 var viteLogger = createLogger();
 function log(message, source = "express") {
   const formattedTime = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
@@ -79,7 +84,7 @@ async function setupVite(app2, server) {
     const url = req.originalUrl;
     try {
       const clientTemplate = path2.resolve(
-        import.meta.dirname,
+        __dirname2,
         "..",
         "client",
         "index.html"
@@ -98,7 +103,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(import.meta.dirname, "public");
+  const distPath = path2.resolve(__dirname2, "../client/dist");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
@@ -151,8 +156,8 @@ app.use((req, res, next) => {
   } else {
     serveStatic(app);
   }
-  const port = 3e3;
-  app.listen(3e3, "127.0.0.1", () => {
-    console.log("Server is running on http://127.0.0.1:3000");
+  const port = process.env.PORT || 3e3;
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`Server is running on http://0.0.0.0:${port}`);
   });
 })();
