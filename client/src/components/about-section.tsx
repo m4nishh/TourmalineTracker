@@ -38,10 +38,10 @@ interface AdvisoryMember {
 const members: AdvisoryMember[] = [
   {
     name: 'Rashi Shrivastava',
-    title: 'CTO - Qentelli',
+    title: 'CDO - Qentelli',
     description: 'Leading educational reform initiatives in Hyderabad for over 15 years.',
     imageAlt: 'Rashi Shrivastava',
-    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+1.png',
+    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-08+at+8.28.03+PM.jpeg',
   },
   {
     name: 'Pavani Saripella',
@@ -693,7 +693,7 @@ export function GuestSection() {
       </div>
       <div className="relative z-10 mx-auto max-w-6xl px-4" style={{ opacity: 1 }}>
         <div className="mb-16 text-center" style={{ opacity: 1, transform: "none" }}>
-          <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">Dignitaries</h2>
+          <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">Past Dignitaries</h2>
           <p className="mx-auto max-w-3xl text-lg text-gray-300">
             Join us in welcoming our distinguished guests who will grace the ceremony.
           </p>

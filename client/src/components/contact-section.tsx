@@ -16,17 +16,17 @@ interface SponsorsProps {
 const defaultSponsors: Sponsor[] = [
   {
     name: "House Of Make-Up",
-    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FHOM.png&w=1920&q=75",
+    logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Makeup.webp",
     alt: "Logo of House Of Make-Up"
   },
   {
     name: "Qentelli",
-    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FQentelli.png&w=1920&q=75",
+    logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Quesntelli.webp",
     alt: "Logo of Qentelli"
   },
   {
     name: "Good Universe",
-    logo: "https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2FGood_Universe.png&w=1920&q=75",
+    logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/GoodUniverse.webp",
     alt: "Logo of Good Universe"
   }
 ];

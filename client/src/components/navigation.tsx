@@ -89,7 +89,8 @@ export default function Navigation({ onNominateClick }: NavigationProps) {
             height={50}
             decoding="async"
             className="object-contain"
-            src="https://tourmaline-bavarois-f43898.netlify.app/_next/image?url=%2Fassets%2Fimages%2Flogo.png&w=384&q=75"
+            background-color="white"
+            src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/HoHYD_logo-removebg-preview.png"
             style={{ color: "transparent" }}
           />
         </div>

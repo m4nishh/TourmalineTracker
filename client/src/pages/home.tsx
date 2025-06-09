@@ -151,14 +151,19 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
   };
 
   const categories = [
-    { label: "Healthcare Hero", value: "healthcare" },
-    { label: "Education Champion", value: "education" },
-    { label: "Community Star", value: "community" },
-    { label: "Environmental Guardian", value: "environment" },
-    { label: "Youth Mentor", value: "youth" },
-    { label: "Senior Care Hero", value: "senior-care" },
+    { label: "Heroes of Inspiration Award", value: "inspiration-award" },
+    { label: "Social Impact Heroes", value: "social-impact" },
+    { label: "Heroes in Entrepreneurship", value: "entrepreneurship" },
+    { label: "Heroes in Tech", value: "tech" },
+    { label: "Heroes of HR", value: "hr" },
+    { label: "Sustainability Heroes", value: "sustainability" },
+    { label: "Heroic Influencers", value: "influencers" },
+    { label: "Heroes of Academia", value: "academia" },
+    { label: "Heroes in Philanthropy", value: "philanthropy" },
+    { label: "Innovative Heroes", value: "innovation" },
+    { label: "Unsung Heroes", value: "unsung" },
   ];
-
+  
   function openForm(): void {
     setShowForm(true);
   }
@@ -194,8 +199,8 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
         <WhatIsHoH />
         <MemoryRideSection />
         <JurySection />
-        <GuestSection/>
         <AdvisorySection/>
+        <GuestSection/>
         <WhyNowSection/>
         <WhoNominateSection/>
         <WhyUniqueSection/>
