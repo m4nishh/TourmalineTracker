@@ -57,13 +57,13 @@ const members: AdvisoryMember[] = [
     imageAlt: 'Portrait of Srinivas Rao',
     imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+2.png',
   },
-  // {
-  //   name: 'Amit Patel',
-  //   title: 'Social Entrepreneur',
-  //   description: 'Driving innovation through community-led social ventures.',
-  //   imageAlt: 'Portrait of Amit Patel',
-  //   imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961',
-  // },
+  {
+    name: 'Arun Prasad',
+    title: 'Head of Talent Acquisition - Flutter',
+    description: 'Driving innovation through community-led social ventures.',
+    imageAlt: 'Portrait of Arun Prasad',
+    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/ToT+Board+of+Advisors+(1)+(3)_000.jpg',
+  },
 ];
 
 
@@ -1044,6 +1044,12 @@ export function MemoryRideSection() {
     'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person4.webp',
     'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person5.webp',
     'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/person6.webp',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.26+(1).jpeg',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.26+(2).jpeg',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.26.jpeg',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.27+(1).jpeg',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.27+(2).jpeg',
+    'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-11+at+06.41.27.jpeg',    
   ];
 
   useEffect(() => {
@@ -1055,6 +1061,10 @@ export function MemoryRideSection() {
     rotate();
     return () => cancelAnimationFrame(frameId);
   }, []);
+
+  const totalImages = imageUrls.length;
+  const angleBetween = 360 / totalImages;
+
 
   return (
     <section className="relative z-30 min-h-screen bg-black py-20 overflow-hidden text-white">
@@ -1087,26 +1097,26 @@ export function MemoryRideSection() {
             transition: 'transform 0.1s linear',
           }}
         >
-          {imageUrls.map((url, idx) => (
-            <div
-              key={idx}
-              className="absolute top-0 left-0 w-[280px] h-[340px] shadow-lg"
-              style={{
-                transform: `rotateY(${idx * 60}deg) translateZ(350px)`,
-              }}
-            >
-              <div
-                className="w-full h-full overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur cursor-pointer"
-                onClick={() => setSelectedImage(url)}
-              >
-                <img
-                  alt={`Carousel ${idx}`}
-                  className="w-full h-full object-cover"
-                  src={url}
-                />
-              </div>
-            </div>
-          ))}
+         {imageUrls.map((url, idx) => (
+  <div
+    key={idx}
+    className="absolute top-0 left-0 w-[280px] h-[340px] shadow-lg"
+    style={{
+      transform: `rotateY(${idx * angleBetween}deg) translateZ(800px)`,
+    }}
+  >
+    <div
+      className="w-full h-full overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur cursor-pointer"
+      onClick={() => setSelectedImage(url)}
+    >
+      <img
+        alt={`Carousel ${idx}`}
+        className="w-full h-full object-cover"
+        src={url}
+      />
+    </div>
+  </div>
+))}
         </div>
       </div>
 
