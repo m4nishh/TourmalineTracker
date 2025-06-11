@@ -34,10 +34,14 @@ const Nomination = sequelize.define('Nomination', {
     allowNull: false,
   },
   write_up: {
-    type: DataTypes.TEXT,
-    allowNull: false,
+  type: DataTypes.TEXT,
+  allowNull: false,
   },
-},{
+  submitted_date: {
+  type: DataTypes.DATE,
+  allowNull: false,
+  },
+  },{
     timestamps: false // ⛔ disables createdAt/updatedAt
   });
 

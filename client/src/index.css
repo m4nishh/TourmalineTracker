@@ -123,3 +123,21 @@
     border-color: hsl(var(--gold));
   }
 }
+
+.dashboard {
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+img {
+  border-radius: 4px;
+}

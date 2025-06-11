@@ -1,8 +1,10 @@
 import express from 'express';
-import { createNomination } from '../controllers/nominationController.ts';
+import { createNomination, getAllNominations } from '../controllers/nominationController.ts';
 
 const router = express.Router();
 
 router.post('/submit-nomination', createNomination);
+router.get('/nominations', getAllNominations);
+
 
 export default router;
