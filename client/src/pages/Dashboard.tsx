@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
   const itemsPerPage = 10;
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/nominations")
+    fetch("https://api.heroesofhyderabad.com/api/nominations")
       .then((res) => res.json())
       .then((data) => {
         setNominations(data.nominations);
