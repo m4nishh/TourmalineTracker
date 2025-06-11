@@ -7,6 +7,7 @@ import SponsorsSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useState } from "react";
 import { NominationForm, NominationFormData } from "@/components/nomination-form";
+import { datetime } from "drizzle-orm/mysql-core";
 
 const submitNominationUrl = "https://api.heroesofhyderabad.com/api/submit-nomination";
 const uloadPhotoUrl = "https://api.heroesofhyderabad.com/api/upload-photo";
@@ -22,7 +23,8 @@ export default function Home() {
     linkedin: "",
     category: "",
     photo: null,
-    writeUp: ""
+    writeUp: "",
+    submittedDate: new Date().toISOString(),
   });
 
   const [formErrors, setFormErrors] = useState<Partial<Record<keyof NominationFormData, string>>>({});
@@ -101,7 +103,8 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
         linkedin: formData.linkedin.trim() || "",
         categories: selectedCategory?.label || formData.category, // Use label as per API spec
         upload_photo: photoUrl, // This should be a URL, not a file
-        write_up: formData.writeUp.trim()
+        write_up: formData.writeUp.trim(),
+        submitted_date: new Date().toISOString(), 
       };
 
       console.log("Submitting data:", submissionData);
@@ -137,6 +140,7 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
         category: "",
         photo: null,
         writeUp: "",
+        submittedDate: new Date().toISOString(),
       });
       setFormErrors({});
       setShowForm(false);

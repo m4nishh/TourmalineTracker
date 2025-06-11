@@ -102,6 +102,7 @@ export interface NominationFormData {
   category: string;
   photo?: File | null;
   writeUp: string;
+  submittedDate?: string; 
 }
 
 interface NominationFormProps {
