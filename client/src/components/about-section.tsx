@@ -1025,6 +1025,36 @@ export function GuestSection() {
               <p className="mb-2 text-sm font-semibold text-yellow-400">PwC Partner - Emerging Tech | Forbes Blockchain 50 | Most Inspiring Web 3 leader</p>
               <p className="text-gray-300 text-sm leading-relaxed">CXO Innovator of the year</p>
             </article>
+            <article
+              className="group relative overflow-hidden rounded-lg bg-white/5 p-6 backdrop-blur-sm transition-shadow hover:shadow-lg"
+              aria-label="Jury member Jaikrishna B"
+              style={{ opacity: 1, transform: "none" }}
+            >
+              <header className="relative mb-4 h-64 w-full overflow-hidden rounded-lg">
+                <img
+                  alt="Portrait of Jaikrishna B"
+                  loading="lazy"
+                  decoding="async"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  sizes="100vw"
+                  srcSet="
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 640w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 750w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 828w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 1080w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 1200w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 1920w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 2048w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg 3840w
+                  "
+                  src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Jaikrishna.jpeg"
+                  style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+                />
+              </header>
+              <h3 className="mb-1 text-xl font-bold text-white">Jaikrishna B</h3>
+              <p className="mb-2 text-sm font-semibold text-yellow-400">President</p>
+              <p className="text-gray-300 text-sm leading-relaxed">Group HR Amara Raja Group</p>
+            </article>
           </div>
         </div>
       </div>

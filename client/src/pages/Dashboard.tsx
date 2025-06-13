@@ -7,6 +7,7 @@ interface Nomination {
   designation: string;
   email: string;
   contact_no: string;
+  linkedIn: string;
   categories: string;
   upload_photo: string;
   write_up: string;
@@ -128,6 +129,7 @@ const Dashboard: React.FC = () => {
                 <th className="px-4 py-2 border">Email</th>
                 <th className="px-4 py-2 border">Contact</th>
                 <th className="px-4 py-2 border">Category</th>
+                <th className="px-4 py-2 border">LinkedIn</th>
                 <th className="px-4 py-2 border">Photo</th>
                 <th className="px-4 py-2 border">Write Up</th>
                 <th className="px-4 py-2 border">Submitted Date</th>
@@ -143,6 +145,7 @@ const Dashboard: React.FC = () => {
                   <td className="px-4 py-2 border">{item.email}</td>
                   <td className="px-4 py-2 border">{item.contact_no}</td>
                   <td className="px-4 py-2 border">{item.categories}</td>
+                  <td className="px-4 py-2 border">{item.linkedIn}</td>
                   <td className="px-4 py-2 border">
                     <img src={item.upload_photo} alt={item.name} className="h-10 w-10 object-cover rounded" />
                   </td>
