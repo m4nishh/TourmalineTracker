@@ -24,11 +24,11 @@ const defaultSponsors: Sponsor[] = [
     logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/Quesntelli.webp",
     alt: "Logo of Qentelli"
   },
-  {
-    name: "Good Universe",
-    logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/GoodUniverse.webp",
-    alt: "Logo of Good Universe"
-  }
+  // {
+  //   name: "Good Universe",
+  //   logo: "https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/GoodUniverse.webp",
+  //   alt: "Logo of Good Universe"
+  // }
 ];
 
 export default function SponsorsSection({ 
@@ -95,7 +95,7 @@ export default function SponsorsSection({
             </p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
             {sponsors.map((sponsor, index) => (
               <div
                 key={index}
