@@ -1238,6 +1238,32 @@ export function WhatIsHoH() {
     </div>
   )}
 
+  
+  export function TotSection() {
+    return (
+      <section id="tot" className="scroll-mt-20">
+        <div className="relative z-10 min-h-[70vh] bg-black pt-[20vh] pb-8">
+          <div className="absolute inset-0 z-0">
+            <img
+              alt="TOT background"
+              className="object-cover opacity-10 absolute inset-0 w-full h-full"
+              src="https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/back2.webp"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+          </div>
+          <div className="relative z-10 max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gold mb-4">
+              TOT is India’s only
+            </h2>
+            <p className="text-2xl md:text-3xl text-white font-semibold">
+              “India’s only no-nonsense, no-fee recognition platform”
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
 
   export function IntroSection() {
     const [scrollY, setScrollY] = useState(0);
