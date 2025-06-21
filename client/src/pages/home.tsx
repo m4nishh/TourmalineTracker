@@ -2,7 +2,7 @@ import LoadingScreen from "@/components/loading-screen";
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import DignitariesSection from "@/components/technology-showcase";
-import {AwardsSection, EventsSection, WhyUniqueSection, WhoNominateSection, WhyNowSection, AdvisorySection, GuestSection, JurySection, MemoryRideSection, WhatIsHoH, IntroSection} from "@/components/about-section";
+import {AwardsSection, EventsSection, WhyUniqueSection, WhoNominateSection, WhyNowSection, AdvisorySection, GuestSection, JurySection, MemoryRideSection, WhatIsHoH, IntroSection, TotSection} from "@/components/about-section";
 import SponsorsSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useState } from "react";
@@ -201,6 +201,7 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
         )}
 
         <WhatIsHoH />
+        <TotSection />
         <MemoryRideSection />
         <JurySection />
         <AdvisorySection/>

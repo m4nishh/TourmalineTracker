@@ -32,7 +32,7 @@ export default function Footer() {
                   Terms & Conditions
                 </span>
               </li>
-              <li>
+              {/* <li>
                 <span className="cursor-pointer transition-colors hover:text-gold">
                   Privacy Policy
                 </span>
@@ -41,7 +41,7 @@ export default function Footer() {
                 <span className="cursor-pointer transition-colors hover:text-gold">
                   Refund Policy
                 </span>
-              </li>
+              </li> */}
               <li>
                 <span className="cursor-pointer transition-colors hover:text-gold">
                   Pricing & Deliverables
