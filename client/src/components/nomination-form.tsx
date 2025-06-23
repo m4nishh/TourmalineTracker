@@ -289,7 +289,7 @@ export const NominationForm: React.FC<NominationFormProps> = ({
                       htmlFor="linkedin"
                       className="text-sm font-medium text-gray-300 mb-2"
                     >
-                      LinkedIn Profile
+                      LinkedIn Profile *
                     </Label>
                     <Input
                       id="linkedin"
@@ -301,6 +301,9 @@ export const NominationForm: React.FC<NominationFormProps> = ({
                       className="mt-2 bg-black border-gray-700 text-white"
                       autoComplete="off"
                     />
+                    {formErrors.linkedin && (
+                      <p className="text-red-500 text-sm mt-1">{formErrors.linkedin}</p>
+                    )}
                   </div>
 
                   <div>

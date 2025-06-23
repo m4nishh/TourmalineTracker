@@ -100,7 +100,7 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
         designation: formData.designation.trim(),
         email: formData.email.trim(),
         contact_no: formData.contactNo.trim(),
-        linkedin: formData.linkedin.trim() || "",
+        linkedIn: formData.linkedin.trim() || "",
         categories: selectedCategory?.label || formData.category, // Use label as per API spec
         upload_photo: photoUrl, // This should be a URL, not a file
         write_up: formData.writeUp.trim(),

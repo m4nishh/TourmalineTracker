@@ -42,11 +42,11 @@ export default function Footer() {
                   Refund Policy
                 </span>
               </li> */}
-              <li>
+              {/* <li>
                 <span className="cursor-pointer transition-colors hover:text-gold">
                   Pricing & Deliverables
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
 
