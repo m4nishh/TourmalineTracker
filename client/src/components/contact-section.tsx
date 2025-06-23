@@ -88,7 +88,7 @@ export default function SponsorsSection({
         <div className="container mx-auto px-4">
           <div className="relative z-10 mb-16 text-center">
             <h2 className="mb-6 font-lora text-4xl font-bold text-white md:text-5xl">
-              Our Sponsors
+              Our Partners
             </h2>
             <p className="mx-auto max-w-3xl font-poppins text-lg text-gray-300">
               Proudly supported by leading organizations committed to community development.
@@ -119,7 +119,7 @@ export default function SponsorsSection({
 
           <div className="mt-20 text-center">
             <h3 className="mb-4 font-lora text-2xl font-bold text-white">
-              Become a Sponsor
+              Become a Partner
             </h3>
             <button
               onClick={handleGetInTouchClick}
