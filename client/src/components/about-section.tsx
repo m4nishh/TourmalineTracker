@@ -963,7 +963,7 @@ export function GuestSection() {
               </header>
               <h3 className="mb-1 text-xl font-bold text-white">Meraj Faheem</h3>
               <p className="mb-2 text-sm font-semibold text-yellow-400">CEO</p>
-              <p className="text-gray-300 text-sm leading-relaxed">Telangana Innovation Council</p>
+              <p className="text-gray-300 text-sm leading-relaxed">Hyderabad Innovation Council</p>
             </article>
 
             <article
@@ -1054,6 +1054,36 @@ export function GuestSection() {
               <h3 className="mb-1 text-xl font-bold text-white">Jaikrishna B</h3>
               <p className="mb-2 text-sm font-semibold text-yellow-400">President</p>
               <p className="text-gray-300 text-sm leading-relaxed">Group HR Amara Raja Group</p>
+            </article>
+            <article
+              className="group relative overflow-hidden rounded-lg bg-white/5 p-6 backdrop-blur-sm transition-shadow hover:shadow-lg"
+              aria-label="Jury member Pratyusha Sharma"
+              style={{ opacity: 1, transform: "none" }}
+            >
+              <header className="relative mb-4 h-64 w-full overflow-hidden rounded-lg">
+                <img
+                  alt="Portrait of Pratyusha Sharma"
+                  loading="lazy"
+                  decoding="async"
+                  className="object-contain transition-transform duration-300 group-hover:scale-105"
+                  sizes="100vw"
+                  srcSet="
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 640w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 750w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 828w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 1080w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 1200w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 1920w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 2048w,
+                    https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg 3840w
+                  "
+                  src="hhttps://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-07-09+at+16.47.09.jpeg"
+                  style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+                />
+              </header>
+              <h3 className="mb-1 text-xl font-bold text-white">Pratyusha Sharma</h3>
+              <p className="mb-2 text-sm font-semibold text-yellow-400">Head HR - Invesco India Pvt. Ltd</p>
+              <p className="text-gray-300 text-sm leading-relaxed">Ambassador - SCSC</p>
             </article>
           </div>
         </div>
