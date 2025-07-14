@@ -325,10 +325,10 @@ export const NominationForm: React.FC<NominationFormProps> = ({
                     )}
                   </div>
 
-                  <div>
+                  {/* <div>
                     <Label
                       htmlFor="photo"
-                      className="text-sm font-medium text-gray-300 mb-2"
+                      className="text-sm font-medium text-gray-300 mb-2" 
                     >
                       Upload Photo *
                     </Label>
@@ -345,7 +345,7 @@ export const NominationForm: React.FC<NominationFormProps> = ({
                     {formErrors.photo && (
                       <p className="text-red-500 text-sm mt-1">{formErrors.photo}</p>
                     )}
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

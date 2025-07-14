@@ -31,7 +31,7 @@ const Nomination = sequelize.define('Nomination', {
   },
   upload_photo: {
     type: DataTypes.STRING, // Could be a URL or filename
-    allowNull: false,
+    allowNull: true,
   },
   write_up: {
   type: DataTypes.TEXT,
