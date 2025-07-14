@@ -74,7 +74,7 @@ const uploadPhotoToS3 = async (file: File): Promise<string> => {
       errors.email = "Invalid email address";
     if (!formData.contactNo.trim()) errors.contactNo = "Contact number is required";
     if (!formData.category) errors.category = "Please select a category";
-    if (!formData.photo) errors.photo = "Photo upload is required";
+    // if (!formData.photo) errors.photo = "Photo upload is required";
     if (!formData.writeUp.trim()) errors.writeUp = "Write-up is required";
 
     setFormErrors(errors);
