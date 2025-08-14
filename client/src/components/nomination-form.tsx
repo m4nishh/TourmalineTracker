@@ -113,6 +113,7 @@ interface NominationFormProps {
   isVisible: boolean;
   onClose: () => void;
   formErrors: Partial<Record<keyof NominationFormData, string>>;
+  isNominationsOpen: boolean; 
 }
 
 export const NominationForm: React.FC<NominationFormProps> = ({
@@ -123,8 +124,34 @@ export const NominationForm: React.FC<NominationFormProps> = ({
   isVisible,
   onClose,
   formErrors,
+  isNominationsOpen = false,
 }) => {
   if (!isVisible) return null;
+
+  // If nominations are closed
+  if (!isNominationsOpen) {
+    return (
+      <div
+        className="fixed inset-0 z-[9999] overflow-y-auto bg-black bg-opacity-70 flex justify-center items-center"
+        style={{ zIndex: "9999" }}
+      >
+        <div className="max-w-lg w-full bg-gray-900 border border-gray-800 rounded-lg p-8 text-center">
+          <h3 className="text-xl font-semibold text-white mb-4">Nominations Closed</h3>
+          <p className="text-gray-300">
+            We are no longer accepting nominations at this time. Please check back later.
+          </p>
+          <div className="mt-6">
+            <button
+              onClick={onClose}
+              className="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-600 transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Special handler for file input to extract File object
   const onFileChange = (e: ChangeEvent<HTMLInputElement>) => {
