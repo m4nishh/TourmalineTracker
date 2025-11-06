@@ -43,13 +43,13 @@ const members: AdvisoryMember[] = [
     imageAlt: 'Rashi Shrivastava',
     imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/assets/WhatsApp+Image+2025-06-08+at+8.28.03+PM.jpeg',
   },
-  {
-    name: 'Pavani Saripella',
-    title: 'Head-Resource Management Group Tech-Mahindra BPS ',
-    description: 'Pioneering sustainable technology solutions for urban development.',
-    imageAlt: 'Portrait of Pavani Saripella',
-    imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+2+(2).png',
-  },
+  // {
+  //   name: 'Pavani Saripella',
+  //   title: 'Head-Resource Management Group Tech-Mahindra BPS ',
+  //   description: 'Pioneering sustainable technology solutions for urban development.',
+  //   imageAlt: 'Portrait of Pavani Saripella',
+  //   imageUrl: 'https://hoh-bucket1.s3.eu-north-1.amazonaws.com/Board+of+Advisory+Sample+-+variation+2+(2).png',
+  // },
   {
     name: 'Srinivas Rao',
     title: 'Mahankali (MSR)',
